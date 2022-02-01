@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+/coverage/
+/build/
+/dist/
+/node_modules/
+/public/
+/vendor/
+/tmp/
+.gitignore
+.coveragerc
+.editorconfig
+.gitattributes
+.vscode

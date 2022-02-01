@@ -1,0 +1,31 @@
+{
+  "name": "unit-test-basics",
+  "version": "1.0.0",
+  "description": "Learning Skills for Basic JavaScript",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.2",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "**/*.{js,mjs,ejs}": [
+      "eslint --cache --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
