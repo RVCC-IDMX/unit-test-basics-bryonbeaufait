@@ -39,7 +39,7 @@ TODO: the string literal 'JavaScript is Awesome!'.
 */
 
 // * Add your code BELOW here
-
+let myClass = 'JavaScript is Awesome!';
 // * Don't mess with the test code below here!
 
 test('myClass', () => {
@@ -60,7 +60,7 @@ TODO: Remember to use single-quotes for the empty string.
 */
 
 // * Add your code BELOW here
-
+let emptyString = '';
 // * Don't mess with the test code below here!
 
 test('emptyString', () => {
@@ -84,7 +84,7 @@ TODO: string with exactly 6 alphanumeric characters in it.
 */
 
 // * Add your code BELOW here
-
+let petName = 'Dakota';
 // * Don't mess with the test code below here!
 
 test('petName', () => {
@@ -106,7 +106,7 @@ TODO: assign it any word that starts with a capital A.
 */
 
 // * Add your code BELOW here
-
+const firstLetterIsA = 'Apple';
 // * Don't mess with the test code below here!
 
 test('firstLetterIsA', () => {
@@ -132,7 +132,7 @@ TODO: and two is not a space but an escaped horizontal tab character.
 */
 
 // * Add your code BELOW here
-
+let counting = 'one\ttwo';
 // * Don't mess with the test code below here!
 
 test('counting', () => {
@@ -156,7 +156,7 @@ TODO: assigned variable petName (from Skill 3).
 */
 
 // * Add your code BELOW here
-
+let mySentence = 'Hello, ' + petName;
 // * Don't mess with the test code below here!
 
 test('mySentence', () => {
@@ -184,7 +184,7 @@ TODO: for a JavaScript expression inside a template literal.
 */
 
 // * Add your code BELOW here
-
+let helloPet = `Hello, ${petName}`;
 // * Don't mess with the test code below here!
 
 test('helloPet', () => {
@@ -212,7 +212,8 @@ TODO: In line 2: Assign the first letter to 'K" using the code: myState[0] = 'K'
 */
 
 // * Add your code BELOW here
-
+let myState = 'California';
+myState[0] = 'K';
 // * Don't mess with the test code below here!
 
 test('myState', () => {
@@ -242,7 +243,8 @@ TODO: In line 2: Reassign thisMonth to the string literal 'September'.
 */
 
 // * Add your code BELOW here
-
+let thisMonth = 'I dunno!';
+thisMonth = 'September';
 // * Don't mess with the test code below here!
 
 test('thisMonth', () => {
@@ -276,12 +278,17 @@ TODO: In the below area, you will practice making template literals
 // TODO: You must use the template literal syntax
 
 // * Add your code BELOW here
-
+let year = '2001';
+let firstName = 'John';
+let lastName = 'Smith';
+let message = `Hi, my name is ${firstName} ${lastName} and I was born in ${year}`;
 // * Don't mess with the test code below here!
 
 test('creating a message', () => {
   expect(typeof message).toBe('string');
-  expect(message).toMatch(/^Hi, my name is John Smith and I was born in 2001$/gm);
+  expect(message).toMatch(
+    /^Hi, my name is John Smith and I was born in 2001$/gm
+  );
 });
 
 // TODO: add a variable called tax and set it to 8.25
@@ -295,7 +302,9 @@ test('creating a message', () => {
 // ${price + tax}
 
 // * Add your code BELOW here
-
+let tax = 8.25;
+let price = 100;
+let total = `Your total including tax is $${price + tax}`;
 // * Don't mess with the test code below here!
 
 test('creating a total', () => {
@@ -309,10 +318,14 @@ test('creating a total', () => {
 // TODO: such that you get the string - '<h1>JavaScript</h1><h2>HTML</h2><p>This is a paragraph</p>'
 
 // * Add your code BELOW here
-
+let heading1 = 'JavaScript';
+let heading2 = 'HTML';
+let html = `<h1>${heading1}</h1><h2>${heading2}</h2><p>This is a paragraph</p>`;
 // * Don't mess with the test code below here!
 
 test('html', () => {
   expect(typeof html).toBe('string');
-  expect(html).toMatch(/^<h1>JavaScript<\/h1><h2>HTML<\/h2><p>This is a paragraph<\/p>$/gm);
-})
+  expect(html).toMatch(
+    /^<h1>JavaScript<\/h1><h2>HTML<\/h2><p>This is a paragraph<\/p>$/gm
+  );
+});
